@@ -16,5 +16,8 @@ def run(queryable):
 
 
 data = run(RepositoryQuery().lang("java").stars(">=100"))
-print(data['total_count'])
+print("Total items from query:", data["total_count"])
+
+for item in data["items"]:
+    print(item["html_url"])
 
