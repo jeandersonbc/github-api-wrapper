@@ -1,2 +1,2 @@
-# github-miner
-A set of scripts to mine Github
+# github-api-wrapper
+A set of wrappers to the Github API.
