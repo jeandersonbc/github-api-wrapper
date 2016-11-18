@@ -5,13 +5,13 @@
 # Author: Jeanderson Candido
 #
 import json
-import urllib.request
+import urllib.request as request
 
 from ghwrappers.search import RepositoryQuery
 
 
 def run(queryable):
-    with urllib.request.urlopen(queryable.query()) as response:
+    with request.urlopen(queryable.query()) as response:
         return json.loads(response.read().decode())
 
 
